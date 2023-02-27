@@ -6,7 +6,6 @@ Increment the large integer by one and return the resulting array of digits.<br>
 class solution{
     function plusOne($digits){
        $last = array_pop($digits);
-       print_r($last);
        if($last !== 9){
         array_push($digits, $last + 1);
        }else{
